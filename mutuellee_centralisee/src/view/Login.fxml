@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="login" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="864.0" prefWidth="1314.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <Button ellipsisString="" layoutX="411.0" layoutY="738.0" mnemonicParsing="false" onAction="#login" prefHeight="51.0" prefWidth="154.0" style="-fx-background-color: #230D6F; -fx-background-radius: 20;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <TextField fx:id="email" layoutX="440.0" layoutY="399.0" prefHeight="51.0" prefWidth="378.0" promptText="Email" style="-fx-background-color: #FFFF; -fx-background-radius: 20;" />
+      <ImageView fitHeight="122.0" fitWidth="128.0" layoutX="568.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/kisspng-computer-icons-login-management-user-5ae155f36cf686.7736884715247170434463.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Register" ellipsisString="" layoutX="734.0" layoutY="738.0" mnemonicParsing="false" onAction="#register" prefHeight="51.0" prefWidth="154.0" style="-fx-background-color: #230D6F; -fx-background-radius: 20;" text="Register" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="password" layoutX="446.0" layoutY="500.0" prefHeight="51.0" prefWidth="378.0" promptText="Password" style="-fx-background-color: #FFFF; -fx-background-radius: 20;" />
+   </children>
+</Pane>

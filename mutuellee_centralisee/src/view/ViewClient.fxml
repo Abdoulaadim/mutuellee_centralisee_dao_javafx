@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="857.0" prefWidth="1217.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewClientController">
+   <children>
+      <TabPane layoutY="7.0" prefHeight="851.0" prefWidth="1217.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Register Client">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="entreprise" layoutX="121.0" layoutY="288.0" prefHeight="37.0" prefWidth="201.0" style="-fx-background-radius: 20;" />
+                        <Text fill="WHITE" layoutX="121.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom Entreprise :">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="prenom" layoutX="121.0" layoutY="395.0" prefHeight="37.0" prefWidth="201.0" style="-fx-background-radius: 20;" />
+                        <Text fill="WHITE" layoutX="122.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prenom :">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="email" layoutX="121.0" layoutY="510.0" prefHeight="37.0" prefWidth="201.0" style="-fx-background-radius: 20;" />
+                        <Text fill="WHITE" layoutX="121.0" layoutY="494.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email :">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="nom" layoutX="665.0" layoutY="297.0" prefHeight="37.0" prefWidth="201.0" style="-fx-background-radius: 20;" />
+                        <Text fill="WHITE" layoutX="664.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom :">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="telephone" layoutX="665.0" layoutY="414.0" prefHeight="37.0" prefWidth="201.0" style="-fx-background-radius: 20;" />
+                        <RadioButton fx:id="cin" layoutX="122.0" layoutY="598.0" mnemonicParsing="false" selected="true" text="CIN" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="radius" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="passport" layoutX="238.0" layoutY="598.0" mnemonicParsing="false" text="Passport" textFill="WHITE" toggleGroup="$radius">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </RadioButton>
+                        <TextField fx:id="cin_passport" layoutX="121.0" layoutY="638.0" prefHeight="37.0" prefWidth="201.0" style="-fx-background-radius: 20;" />
+                        <DatePicker fx:id="date" layoutX="665.0" layoutY="190.0" prefHeight="37.0" prefWidth="201.0" />
+                        <Text fill="WHITE" layoutX="665.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date :">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <TextArea fx:id="adresse" layoutX="666.0" layoutY="540.0" prefHeight="129.0" prefWidth="301.0" />
+                        <Text fill="WHITE" layoutX="666.0" layoutY="518.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse :">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="badge" layoutX="121.0" layoutY="190.0" prefHeight="37.0" prefWidth="201.0" style="-fx-background-radius: 20;" />
+                        <Text fill="WHITE" layoutX="121.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Num badge :">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Button ellipsisString="" layoutX="1018.0" layoutY="717.0" mnemonicParsing="false" onAction="#Register" prefHeight="51.0" prefWidth="154.0" style="-fx-background-color: #230D6F; -fx-background-radius: 20;" text="Register" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Button>
+                        <Text fill="WHITE" layoutX="465.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register Client">
+                           <font>
+                              <Font name="System Bold" size="35.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="664.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telephone :">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Affichage Client">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text fill="WHITE" layoutX="495.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Affichage Client">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Text>
+                        <TableView fx:id="Ttable" layoutX="-4.0" layoutY="209.0" prefHeight="609.0" prefWidth="1217.0">
+                          <columns>
+                            <TableColumn fx:id="Tbadge" prefWidth="89.0" text="N°badge" />
+                            <TableColumn fx:id="Tentreprise" prefWidth="89.0" text="Entreprise" />
+                              <TableColumn fx:id="Tdate" prefWidth="89.0" text="Date début" />
+                              <TableColumn fx:id="Tprenom" prefWidth="87.0" text="Prenom" />
+                              <TableColumn fx:id="Tnom" prefWidth="99.0" text="Nom" />
+                              <TableColumn fx:id="Tcin" prefWidth="107.0" text="Cin" />
+                              <TableColumn fx:id="Tpassport" prefWidth="149.0" text="Passport" />
+                              <TableColumn fx:id="Ttelephone" prefWidth="156.0" text="Telephone" />
+                              <TableColumn fx:id="Temail" prefWidth="189.0" text="Email" />
+                              <TableColumn fx:id="Tadresse" prefWidth="162.0" text="Adresse" />
+                          </columns>
+                        </TableView>
+                        <TextField fx:id="Recherche" layoutX="145.0" layoutY="120.0" onKeyTyped="#filtre" prefHeight="32.0" prefWidth="157.0" promptText="Recherche" />
+                        <Text fill="WHITE" layoutX="21.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recherche :">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <RadioButton fx:id="f_entreprise" layoutX="380.0" layoutY="128.0" mnemonicParsing="false" text="Nom entreprise" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="cherchegroup" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="f_cin" layoutX="550.0" layoutY="126.0" mnemonicParsing="false" text="CIN" textFill="WHITE" toggleGroup="$cherchegroup">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="f_nom" layoutX="638.0" layoutY="126.0" mnemonicParsing="false" text="Nom" textFill="WHITE" toggleGroup="$cherchegroup">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="f_prenom" layoutX="721.0" layoutY="126.0" mnemonicParsing="false" text="Prenom" textFill="WHITE" toggleGroup="$cherchegroup">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="f_email" layoutX="831.0" layoutY="128.0" mnemonicParsing="false" text="Email" textFill="WHITE" toggleGroup="$cherchegroup">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </RadioButton>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Graphe">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <LineChart fx:id="chartclient" layoutX="51.0" layoutY="48.0" prefHeight="736.0" prefWidth="1107.0" style="-fx-background-color: #FFFFFF;" title="Date">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" fx:id="x" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis fx:id="y" side="LEFT" />
+                          </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>

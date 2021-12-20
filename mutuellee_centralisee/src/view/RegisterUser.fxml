@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="813.0" prefWidth="1117.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegisterUserController">
+   <children>
+      <Text fill="WHITE" layoutX="425.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register">
+         <font>
+            <Font name="System Bold" size="41.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="260.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Firstname :">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="258.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lastname :">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="258.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email : ">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="254.0" layoutY="503.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password : ">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <TextField fx:id="firstname" layoutX="548.0" layoutY="204.0" prefHeight="39.0" prefWidth="228.0" promptText="Firstname" style="-fx-background-color: #FFFF; -fx-background-radius: 20;" />
+      <TextField fx:id="lastname" layoutX="548.0" layoutY="291.0" prefHeight="39.0" prefWidth="228.0" promptText="Lastname" style="-fx-background-color: #FFFF; -fx-background-radius: 20;" />
+      <TextField fx:id="email" layoutX="556.0" layoutY="378.0" prefHeight="39.0" prefWidth="228.0" promptText="Email" style="-fx-background-color: #FFFF; -fx-background-radius: 20;" />
+      <PasswordField fx:id="password" layoutX="556.0" layoutY="481.0" prefHeight="39.0" prefWidth="228.0" promptText="Password" style="-fx-background-radius: 20;" />
+      <Button fx:id="Register" ellipsisString="" layoutX="859.0" layoutY="662.0" mnemonicParsing="false" onAction="#register" prefHeight="51.0" prefWidth="154.0" style="-fx-background-color: #230D6F; -fx-background-radius: 20;" text="Register" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="login" ellipsisString="" layoutX="92.0" layoutY="662.0" mnemonicParsing="false" onAction="#login" prefHeight="51.0" prefWidth="154.0" style="-fx-background-color: #230D6F; -fx-background-radius: 20;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
